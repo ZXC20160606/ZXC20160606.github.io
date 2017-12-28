@@ -295,10 +295,11 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 文章标题</span><br></pre></td></tr></table></figure>
 <p> 然后在source/_post目录打开相应的md文件编辑即可。</p>
 </li>
-<li>创建页面<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page 页面标题</span><br></pre></td></tr></table></figure>
+<li><p>创建页面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page 页面标题</span><br></pre></td></tr></table></figure>
+<p> 然后在source目录下找到对应的文件夹打开里面的index.md编写即可。</p>
 </li>
 </ol>
-<p>然后在source目录下找到对应的文件夹打开里面的index.md编写即可。</p>
 <hr>
 <h1 id="替换主题"><a href="#替换主题" class="headerlink" title="替换主题"></a>替换主题</h1><ol>
 <li>在<a href="http://hexo.io/themes/" target="_blank" rel="noopener">主题</a>官网找到自己喜欢的主题，根据提示git到本地themes目录；</li>
@@ -309,9 +310,7 @@
 <hr>
 <h1 id="托管到github"><a href="#托管到github" class="headerlink" title="托管到github"></a>托管到github</h1><ol>
 <li>注册github账号（自行百度）；</li>
-<li>验证ssh key</li>
-</ol>
-<ul>
+<li>验证ssh key<ul>
 <li>在桌面右键git bash here</li>
 <li>使用ssh-keygen -t rsa -C “注册git的邮箱”命令，然后一路回车，知道出现泡沫图案</li>
 <li>进入C:\users\计算机用户名.ssh文件夹</li>
@@ -321,21 +320,20 @@
 <li>单击右侧add ssh key按钮</li>
 <li>title：随便填，key：Ctrl+v，然后点击add ssh key按钮</li>
 </ul>
-<ol>
-<li>验证github用户名和邮箱</li>
-</ol>
+</li>
+<li><p>验证github用户名和邮箱</p>
 <ul>
 <li>在桌面右键git bash here，依次执行以下命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name&quot;github用户名&quot;</span><br><span class="line">git config --global user.email&quot;github邮箱&quot;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<ol>
-<li>在github创建用户名同名仓库</li>
-</ol>
+</li>
+<li><p>在github创建用户名同名仓库</p>
 <ul>
 <li>点击github头像左侧+按钮，选择第一项</li>
-<li>仓库名：github用户名.github.io<br>ps:注意区分大小写，必须保持完全一致。</li>
+<li>仓库名：github用户名.github.io</li>
+<li>ps:注意区分大小写，必须保持完全一致。</li>
 </ul>
-<ol>
+</li>
 <li>配置_config.yml<br>打开blog项目根目录的_config.yml，找到最下面的deploy选项，按照如下格式填写：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/用户名/用户名.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
