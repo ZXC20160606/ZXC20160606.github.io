@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://www.baidu.com/2017/12/28/hexo-github搭建个人博客/index.html">
 <meta property="og:site_name" content="沙漏的秘密">
 <meta property="og:description" content="hexo是目前最主流的静态博客框架，该框架基于node，因此编译效率非常高，同时，借助Github可以实现零成本搭建和维护，Let’s go !  环境搭建安装node环境在node官网下载对应操作系统的node安装包，安装过程比较简单，就是next模式，安装完毕通过以下步骤检测是否安装成功：  win+r打开命令行窗口 输入cmd回车 在cmd窗口输入node -v  如果提示“node不是外部">
-<meta property="og:updated_time" content="2017-12-28T08:25:27.416Z">
+<meta property="og:updated_time" content="2017-12-28T08:27:32.182Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github搭建个人博客">
 <meta name="twitter:description" content="hexo是目前最主流的静态博客框架，该框架基于node，因此编译效率非常高，同时，借助Github可以实现零成本搭建和维护，Let’s go !  环境搭建安装node环境在node官网下载对应操作系统的node安装包，安装过程比较简单，就是next模式，安装完毕通过以下步骤检测是否安装成功：  win+r打开命令行窗口 输入cmd回车 在cmd窗口输入node -v  如果提示“node不是外部">
@@ -337,12 +337,11 @@
 <li>ps:注意区分大小写，必须保持完全一致。</li>
 </ul>
 </li>
-<li>配置_config.yml<br>打开blog项目根目录的_config.yml，找到最下面的deploy选项，按照如下格式填写：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/用户名/用户名.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<li><p>配置_config.yml<br> 打开blog项目根目录的_config.yml，找到最下面的deploy选项，按照如下格式填写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/用户名/用户名.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p> ps:注意缩进和符号以及属性前面的空格。</p>
 </li>
-</ol>
-<p>ps:注意缩进和符号以及属性前面的空格。</p>
-<ol>
-<li>在blog根目录执行hexo d命令，将本地博客代码推送到github服务器<br>ps:不需要每更改一次都推送，先在本地测试准确无误后再推送。</li>
+<li>在blog根目录执行hexo d命令，将本地博客代码推送到github服务器<br> ps:不需要每更改一次都推送，先在本地测试准确无误后再推送。</li>
 </ol>
 <hr>
 <h1 id="个人域名绑定"><a href="#个人域名绑定" class="headerlink" title="个人域名绑定"></a>个人域名绑定</h1><ol>
@@ -410,7 +409,7 @@
         <p><span>本文标题:</span><a href="/2017/12/28/hexo-github搭建个人博客/">hexo+github搭建个人博客</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 贝贝丝去哪儿 的个人博客">贝贝丝去哪儿</a></p>
         <p><span>发布时间:</span>2017年12月28日 - 14时37分</p>
-        <p><span>最后更新:</span>2017年12月28日 - 16时25分</p>
+        <p><span>最后更新:</span>2017年12月28日 - 16时27分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/12/28/hexo-github搭建个人博客/" title="hexo+github搭建个人博客">http://www.baidu.com/2017/12/28/hexo-github搭建个人博客/</a>
             <span class="copy-path" data-clipboard-text="原文: http://www.baidu.com/2017/12/28/hexo-github搭建个人博客/　　作者: 贝贝丝去哪儿" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
